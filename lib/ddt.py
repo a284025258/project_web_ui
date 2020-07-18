@@ -340,7 +340,7 @@ def ddt(arg=None, **kwargs):
                         fmt_test_name
                     )
                     # test_data_docstring = _get_test_data_docstring(func, v)
-                    test_data_docstring = v.title
+                    test_data_docstring = v['title']
                     if hasattr(func, UNPACK_ATTR):
                         if isinstance(v, tuple) or isinstance(v, list):
                             add_test(

@@ -33,8 +33,10 @@ class Config(BasePath):
     REPORTS_DIR = os.path.join(BASE_DIR, 'reports')
     # 公共文件的路径
     COMMON_DIR = os.path.join(BASE_DIR, 'common')
+    # 截图所在路径
+    SCREENSHOTS_DIR = os.path.join(BASE_DIR, 'screenshots')
     # 超时时间
-    TIMEOUT = 10
+    TIMEOUT = 3
     #  webdriver 驱动地址
     DRIVER_PATH = os.path.join(COMMON_DIR, 'chromeDriver_71.exe')
 
