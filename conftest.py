@@ -14,7 +14,7 @@ def init_web():
     # 窗口最大化
     driver.maximize_window()
     # 设置隐式等待
-    driver.implicitly_wait(3)
+    driver.implicitly_wait(10)
     yield driver
     driver.quit()
 

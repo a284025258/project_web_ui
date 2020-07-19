@@ -23,4 +23,6 @@ import pytest
 #         runner.run(suite)
 #     log.info('---------------------------------------测试结束---------------------------------------')
 if __name__ == '__main__':
-    pytest.main(['-s', '-m "success"', '--html={}'.format(os.path.join(constant.REPORTS_DIR, 'report.html'))])
+    # pytest.main(['-s', '-m "success"', '--html={}'.format(os.path.join(constant.REPORTS_DIR, 'report.html'))])
+    # 使用 allure
+    pytest.main(['-s', '-m "success"', f'--alluredir={constant.Allure_DIR}'])

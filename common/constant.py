@@ -35,6 +35,8 @@ class Config(BasePath):
     COMMON_DIR = os.path.join(BASE_DIR, 'common')
     # 截图所在路径
     SCREENSHOTS_DIR = os.path.join(BASE_DIR, 'screenshots')
+    # 截图所在路径
+    Allure_DIR = os.path.join(BASE_DIR, 'allure_report')
     # 超时时间
     TIMEOUT = 3
     #  webdriver 驱动地址
